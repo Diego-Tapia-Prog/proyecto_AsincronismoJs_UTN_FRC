@@ -18,9 +18,21 @@ function readCSV(file) {
 (function main() {
     readCSV('./data/tbbt.csv')
         .then(data =>{
-            data.forEach(informacion => {
-                console.log(informacion);
-            });
+            
+            console.log('Temporada 3');
+            data
+                .filter(info => info.season === '3')
+                .forEach(info => {
+                    console.log("Nombre Episodio: ",info.title, " => Rating Episodio: ", info.imdb_rating);
+                });
+            
+            console.log('Episodio 22 de la Temporada 3 ',
+                data.find(info => info.season === '3' && info.episode_num === '22').title
+            );
+            
+            const season3 = data.filter(info => info.season === '3');
+            const ratingAvg = season3.reduce((suma,inf) => suma += parseFloat(inf.imdb_rating) , 0) / season3.length;
+            console.log(`El rating IMDB promedio para esta Tercera temporada es ${ratingAvg}`);
         })
         .catch(error => console.error('Error al leer el archivo CSV: ', error));
 })()
