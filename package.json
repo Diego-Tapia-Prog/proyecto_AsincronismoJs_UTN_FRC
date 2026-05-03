@@ -22,5 +22,8 @@
   "homepage": "https://github.com/Diego-Tapia-Prog/proyecto_AsincronismoJs_UTN_FRC#readme",
   "devDependencies": {
     "eslint": "^10.3.0"
+  },
+  "dependencies": {
+    "csv-parser": "^3.2.0"
   }
 }
