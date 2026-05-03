@@ -1,0 +1,26 @@
+{
+  "name": "proyecto_asicronismo_utn_frc",
+  "version": "1.0.0",
+  "description": "Proceso de datos CSV con las temporadas y los episodios de la serie",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ejercicio.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diego-Tapia-Prog/proyecto_AsincronismoJs_UTN_FRC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Diego-Tapia-Prog/proyecto_AsincronismoJs_UTN_FRC/issues"
+  },
+  "homepage": "https://github.com/Diego-Tapia-Prog/proyecto_AsincronismoJs_UTN_FRC#readme",
+  "devDependencies": {
+    "eslint": "^10.3.0"
+  }
+}
